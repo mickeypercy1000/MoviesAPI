@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-r$)6#=#94&*^p532a2j!35m_rbisf2za2ncyys+(=y^a!!ek_z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['mophylmoviesapi.herokuapp.com']
 
@@ -81,9 +81,9 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
      'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd6sir20dnh6h3j',
-        'USER': 'inbgpxhktryobv',
-        'PASSWORD': 'd917e7f4e2ae39ef73b4d17460592cc20a197e14be3d5328e470b8dc17c77448',
+        'NAME': 'ddhvlisftq51sp',
+        'USER': 'wkvkqrcwtixofg',
+        'PASSWORD': '5d9c7ee986a742bc07be874cdd8e9f08fed15ea9bb13aaa289a7f95929cfddff',
         'HOST': 'ec2-52-21-153-207.compute-1.amazonaws.com',
         'PORT': '5432'
     }
