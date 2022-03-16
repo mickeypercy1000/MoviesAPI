@@ -35,7 +35,7 @@ class MoviesAPI(models.Model):
     movie_title             = models.CharField(max_length=255, unique=True)
     movie_description       = models.TextField()
     genre                   = models.CharField(choices = movie_genres, max_length=20, default='Action')
-    movie_year              = models.IntegerField(('year'), max_length=4, choices=YEAR_OPTIONS, default=datetime.datetime.now().year) 
+    movie_year              = models.IntegerField(('year'), choices=YEAR_OPTIONS, default=datetime.datetime.now().year) 
     status                  = models.CharField(choices = movie_status, max_length=20) 
     date_created            = models.DateTimeField(auto_now_add=True, null=True, blank = True)
     date_updated            = models.DateTimeField(auto_now=True, null=True, blank = True)
