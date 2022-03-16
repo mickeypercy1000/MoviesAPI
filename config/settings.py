@@ -1,3 +1,5 @@
+import os
+import django_heroku
 """
 Django settings for config project.
 
@@ -25,7 +27,8 @@ SECRET_KEY = 'django-insecure-r$)6#=#94&*^p532a2j!35m_rbisf2za2ncyys+(=y^a!!ek_z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mophylmoviesapi.herokuapp.com']
+
 
 
 # Application definition
@@ -78,10 +81,10 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
      'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'MoviesAPIDB',
-        'USER': 'postgres',
-        'PASSWORD': 'Enigma.100',
-        'HOST': 'localhost',
+        'NAME': 'd6sir20dnh6h3j',
+        'USER': 'inbgpxhktryobv',
+        'PASSWORD': 'd917e7f4e2ae39ef73b4d17460592cc20a197e14be3d5328e470b8dc17c77448',
+        'HOST': 'ec2-52-21-153-207.compute-1.amazonaws.com',
         'PORT': '5432'
     }
 }
@@ -122,6 +125,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
+django_heroku.settings(locals())
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
